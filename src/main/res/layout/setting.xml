@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+
+				<ScrollView
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content">
+
+								<LinearLayout
+												android:orientation="vertical"
+												android:layout_width="match_parent"
+												android:layout_height="wrap_content">
+
+												<com.TianRu.r18.Titlelayout
+																android:id="@+id/settingtitle"
+																android:layout_width="match_parent"
+																android:layout_height="wrap_content">
+
+												</com.TianRu.r18.Titlelayout>
+
+												<RelativeLayout
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content">
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="是否将图片保存至私密空间"
+																				android:layout_alignParentLeft="true"
+																				android:layout_centerHorizontal="true"/>
+
+																<Switch
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:layout_alignParentRight="true"
+																				android:id="@+id/isprivate"/>
+
+												</RelativeLayout>
+
+												<Button
+																android:layout_width="match_parent"
+																android:layout_height="wrap_content"
+																android:text="点击进入私密空间"
+																android:onClick="gotoprivate"/>
+
+												<Button
+																android:layout_width="match_parent"
+																android:layout_height="wrap_content"
+																android:text="查看涩图历史记录"
+																android:onClick="gotohistory"/>
+
+												<LinearLayout
+																android:orientation="vertical"
+																android:layout_width="match_parent"
+																android:layout_height="wrap_content"
+																android:id="@+id/savesetting">
+
+																<EditText
+																				android:layout_width="match_parent"
+																				android:inputType="text"
+																				android:layout_height="wrap_content"
+																				android:ems="10"
+																				android:hint="在此输入涩图保存路径"
+																				android:id="@+id/inputpath"/>
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="Text"
+																				android:id="@+id/path"/>
+
+																<Button
+																				android:layout_width="match_parent"
+																				android:layout_height="wrap_content"
+																				android:text="设置涩图保存路径"
+																				android:onClick="setSavePath"/>
+
+												</LinearLayout>
+
+												<RelativeLayout
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content">
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="是否将APP伪装成计算器"
+																				android:layout_alignParentLeft="true"
+																				android:layout_centerHorizontal="true"/>
+
+																<Switch
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:layout_alignParentRight="true"
+																				android:id="@+id/ishide"/>
+
+												</RelativeLayout>
+
+												<LinearLayout
+																android:orientation="vertical"
+																android:layout_width="match_parent"
+																android:layout_height="wrap_content"
+																android:id="@+id/hidesetting">
+
+																<EditText
+																				android:layout_width="match_parent"
+																				android:inputType="text"
+																				android:layout_height="wrap_content"
+																				android:ems="10"
+																				android:hint="在此输入进入密码"
+																				android:id="@+id/inputpassword"/>
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="Text"
+																				android:id="@+id/password"/>
+
+																<Button
+																				android:layout_width="match_parent"
+																				android:layout_height="wrap_content"
+																				android:text="设置密码"
+																				android:onClick="setPassword"/>
+
+												</LinearLayout>
+
+												<RelativeLayout
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content">
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="启动时是否自动开启r18"
+																				android:layout_alignParentLeft="true"
+																				android:layout_centerHorizontal="true"/>
+
+																<Switch
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:layout_alignParentRight="true"
+																				android:id="@+id/openr18"/>
+
+												</RelativeLayout>
+
+												<RelativeLayout
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content">
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="获取时是否保留标签"
+																				android:layout_alignParentLeft="true"
+																				android:layout_centerHorizontal="true"/>
+
+																<Switch
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:layout_alignParentRight="true"
+																				android:id="@+id/savetag"/>
+
+												</RelativeLayout>
+
+												<RelativeLayout
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content">
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="是否关闭启动时使用教程"
+																				android:layout_alignParentLeft="true"
+																				android:layout_centerHorizontal="true"/>
+
+																<Switch
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:layout_alignParentRight="true"
+																				android:id="@+id/isclose"/>
+
+												</RelativeLayout>
+
+												<RelativeLayout
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content">
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="是否关闭自动检测更新"
+																				android:layout_alignParentLeft="true"
+																				android:layout_centerHorizontal="true"/>
+
+																<Switch
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:layout_alignParentRight="true"
+																				android:id="@+id/isclosecheckupdate"/>
+
+												</RelativeLayout>
+
+												<Button
+																android:layout_width="match_parent"
+																android:layout_height="wrap_content"
+																android:text="检测更新"
+																android:onClick="checkupdate"/>
+
+												<Spinner
+																android:layout_width="match_parent"
+																android:layout_height="wrap_content"
+																android:id="@+id/picsetting"/>
+
+												<LinearLayout
+																android:orientation="vertical"
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content"
+																android:layout_marginTop="100dp">
+
+																<TextView
+																				android:layout_width="wrap_content"
+																				android:layout_height="wrap_content"
+																				android:text="作者:一只野生天如 作者QQ:3291691454"/>
+
+												</LinearLayout>
+
+								</LinearLayout>
+
+				</ScrollView>
+
+</LinearLayout>
+

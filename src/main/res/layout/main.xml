@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#FF9DF5DF"
+	android:gravity="center"
+	android:padding="0dp">
+
+	<com.TianRu.r18.Titlelayout
+		android:id="@+id/maintitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	</com.TianRu.r18.Titlelayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:gravity="center">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="text"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:id="@+id/tag"
+			android:hint="涩图标签，多个标签用空格隔开"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:gravity="center">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="开启r18"
+			android:id="@+id/check"
+			android:onClick="check"
+			android:background="#FF74EFF6"/>
+
+		<Button
+			android:id="@+id/get"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="获取"
+			android:onClick="get"
+			android:background="#FF74EFF6"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="保存图片"
+			android:id="@+id/save"
+			android:onClick="save"
+			android:background="#FF74EFF6"/>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=""
+				android:id="@+id/info"
+				android:gravity="left"
+				android:textIsSelectable="true"/>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:id="@+id/pic"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

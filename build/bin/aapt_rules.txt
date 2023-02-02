@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:28
+-keep class com.TianRu.r18.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.TianRu.r18.setting { <init>(...); }
+
+# onClick res/layout/main.xml #generated:45
+-keepclassmembers class * { *** check(...); }
+
+# onClick res/layout/main.xml #generated:53
+-keepclassmembers class * { *** get(...); }
+
+# onClick res/layout/main.xml #generated:61
+-keepclassmembers class * { *** save(...); }
+
+# onClick res/layout/setting.xml #generated:16
+-keepclassmembers class * { *** setSavePath(...); }
+
+# onClick res/layout/main.xml #generated:26
+-keepclassmembers class * { *** setting(...); }
+
